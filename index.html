@@ -72,42 +72,48 @@
 			<section id="projects">
 				<h2>Proyectos realizados</h2>
 				<div class="projects_container">
-					<a href="/" class="project1 project">
+					<a id="project1" class="project">
 						<div class="project_details">
-							<h3>SIMON DICE</p>
+							<h3>SIMON DICE</h3>
 							<p>Juego de memoria con secuencias de colores</p>
 						</div>
+						<div class="comodin_overlay"></div>
 					</a>
-					<a href="/" class="project2 project">
+					<a id="project2" class="project">
 						<div class="project_details">
-							<h3>PLATZI CONF</p>
+							<h3>PLATZI CONF</h3>
 							<p>Pagina informativa de la conferencia de Platzi</p>
 						</div>
+						<div class="comodin_overlay"></div>
 					</a>
-					<a href="/" class="project3 project">
+					<a id="project3" class="project">
 						<div class="project_details">
-							<h3>Rick and Morty</p>
+							<h3>RICK AND MORTY</h3>
 							<p>Todos los personajes de la serie animada</p>
 						</div>
+						<div class="comodin_overlay"></div>
 					</a>
-					<a href="/" class="project4 project">
+					<a id="project4" class="project">
 						<div class="project_details">
-							<h3>CLON GOOGLE</p>
+							<h3>CLON GOOGLE</h3>
 							<p>Maquetado de la pagina principal de Google</p>
 						</div>
+						<div class="comodin_overlay"></div>
 					</a>
-					<a href="/" class="project5 project">
+					<!-- <a id="project5" class="project">
 						<div class="project_details">
-							<h3>Proyecto</p>
+							<h3>Proyecto</h3>
 							<p>Descripcion del proyecto realizado</p>
 						</div>
+						<div class="comodin_overlay"></div>
 					</a>
-					<a href="/" class="project6 project">
+					<a id="project6" class="project">
 						<div class="project_details">
-							<h3>Proyecto</p>
+							<h3>Proyecto</h3>
 							<p>Descripcion del proyecto realizado</p>
 						</div>
-					</a>
+						<div class="comodin_overlay"></div>
+					</a> -->
 				</div>
 			</section>
 			<section id="contact">
@@ -129,6 +135,12 @@
 			</div>
 		</div>
 	</footer>
+	<section id="overlay" class="overlay"></section>
+	<section id="modal" class="modal">
+		<div id="modal_info"></div>
+		<button id="modal_goButton" class="button">Ver Proyecto</button>
+		<button id="modal_closeButton" class="button">Cerrar</button>
+	</section>
 	<script src="index.js"></script>
 </body>
 </html>

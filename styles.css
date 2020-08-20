@@ -17,7 +17,7 @@ body {
 }
 header {
     position: fixed;
-    background-color: rgb(187, 181, 181);
+    background-color: rgba(197, 181, 181, 0.9);
     width: 100%;
     top: 0;
     z-index: 10;
@@ -52,11 +52,12 @@ header nav ul li a{
     font-size: inherit;
 }
 main {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 #hero {
     display: flex;
     margin-bottom: 50px;
+    background-color: rgba(197, 181, 181, 0.9);
 }
 #hero figure {
     width: 40%;
@@ -131,22 +132,22 @@ main {
     grid-template: 250px 250px / 1fr 1fr 1fr;
     grid-gap: 20px;
 }
-.project1 {
+#project1 {
     background-image: url('/img/Simon_dice.jpg');
 }
-.project2 {
+#project2 {
     background-image: url('/img/platzi_conf.png');
 }
-.project3 {
+#project3 {
     background-image: url('/img/rickandmorty.jpg');
 }
-.project4 {
+#project4 {
     background-image: url('/img/clon_google.jpg');
 }
-.project5 {
+#project5 {
     background-image: url('./img/FB_IMG_1593315626780.jpg');
 }
-.project6 {
+#project6 {
     background-image: url('./img/FB_IMG_1593315626780.jpg');
 }
 .project {
@@ -157,6 +158,7 @@ main {
 .project {
     /* display: none; */
     /* opacity: .8; */
+    position: relative;
     color: rgba(150, 150, 150, 0);
     background-position: center;
     background-size: cover;
@@ -164,19 +166,34 @@ main {
 .project_details {
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     opacity: 0;
 }
 .project_details h3{
     text-align: center;
+    margin-bottom: 10px;
+    font-size: 25px;
 }
 .project_details p {
+    margin-top: 5px;
     padding: 0 40px;
+    font-size: 18px;
 }
-.project_details:hover{
+.project_details_hover{
     /* display: flex; */
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.8);
+}
+.comodin_overlay {
+    position: absolute;
+    background-color: none;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #footer {
@@ -239,4 +256,68 @@ main {
 .img_redes {
     width: 40px;
     padding-left: 20px;
+}
+
+
+.overlay {
+    display: none;
+    background-color: rgba(56, 133, 196, 0.4);
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 50;
+}
+.modal {
+    display: none;
+    background-color: rgb(215, 219, 172);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    margin: 3% 17%;
+    width: 700px;
+    height: 80%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 1px 20px 0px rgba(0,0,0,0.75);
+
+}
+.displayNone {
+    display: none;
+}
+.displayBlock {
+    display: block; 
+}
+.modal_title {
+    font-weight: bold;
+    font-size: 40px;
+}
+.modal_content {
+    display: flex;
+    text-align: left;
+}
+.modal_img{
+    width: 260px;
+    margin: 10px;
+}
+.modal_description{
+    padding-right: 20px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.button {
+    margin-top: 30px;
+    padding: 10px 15px;
+}
+.button:hover {
+    cursor: pointer;
+}
+#modal_goButton{
+    background-color: rgba(108, 250, 79, 0.2);
+}
+#modal_closeButton{
+    background-color: rgb(236, 30, 30);
+    color: white;
 }
