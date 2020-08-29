@@ -5,16 +5,21 @@ const overlay = document.getElementById('overlay')
 const proyectos = document.querySelectorAll('.comodin_overlay')
 const project_details = document.querySelectorAll('.project_details')
 const modal_info = document.getElementById('modal_info')
+const menu = document.getElementById('img_menu')
+const header = document.getElementById('header')
+const menuList = document.getElementById('menu_list')
+const menuContainer = document.getElementById('menu_container')
+const elementos_lista = document.querySelectorAll('.menu_elemento')
 
 //Mensajes que van dentro del modal
 const PROYECTOS_TITULO = [
     'SIMON DICE', 'PLATZI CONF', 'RICK AND MORTY', 'CLON GLOOGLE', 'PROYECTO 5', 'PROYECTO 6'
 ]
 const PROYECTOS_DESCRIPCION = [
-    'Juego de memoria con secuencia de colores',
-    'Pagina informativa de la conferencia de Platzi',
-    'Todos los personajes de la serie animada',
-    'Clon de google',
+    'Es un juego de memoria recordando la secuencia de 4 colores, realizado con Javascript Vanilla',
+    'Pagina informativa de ejemplo, maquetada con HTML, CSS y Bootstrap',
+    'Todos los personajes de la serie animada, implementada con React haciendo llamado a la API de rickandmorty',
+    'Clon simple de la pagina de inicio google con HTML y CSS',
     'Proyectos 5 aun por verse',
     'Proyecto 6 aun tambien por verse'
 ]
@@ -86,4 +91,44 @@ closeButton.onclick = () => {
     modal.classList.remove('displayBlock')
     overlay.classList.remove('displayBlock')
 }
+
+
+//Menu de hamburguesa
+menu.addEventListener('click', abrirMenu)
+function abrirMenu () {
+    header.classList.toggle('header-fullscrean')
+    if (header.classList.contains('header-fullscrean')) {
+        menuList.classList.add('ul-fullscrean')
+        menuContainer.classList.add('menu-container')
+        for (let i=0; i< elementos_lista.length; i++) {
+            elementos_lista[i].classList.add('menu-elemento_variante')
+        }
+    } else {
+        menuList.classList.remove('ul-fullscrean')
+        menuContainer.classList.remove('menu-container')
+        for (let i=0; i< elementos_lista.length; i++) {
+            elementos_lista[i].classList.remove('menu-elemento_variante')
+        }
+    }
+}
+
+for (let i=0; i< elementos_lista.length; i++) {
+    elementos_lista[i].addEventListener('click', cerrarMenu)
+}
+function cerrarMenu () {
+    header.classList.remove('header-fullscrean')
+    menuList.classList.remove('ul-fullscrean')
+        menuContainer.classList.remove('menu-container')
+        for (let i=0; i< elementos_lista.length; i++) {
+            elementos_lista[i].classList.remove('menu-elemento_variante')
+        }
+}
+
+window.addEventListener('resize', cambioTamaño);
+function cambioTamaño() {
+    if (window.innerWidth>480 && header.classList.contains('header-fullscrean')) {
+        cerrarMenu()
+    }
+}
+
 
