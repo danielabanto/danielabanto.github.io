@@ -21,6 +21,29 @@
     #projects{
         margin-top: 30px;
     }
+    .modal {
+        width: 70%;
+        height: 90%;
+        left: 15%;
+    }
+    .modal_title {
+        font-size: 35px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    .modal_img{
+        width: 50%;
+        margin: 5px;
+    }
+    .modal_description{
+        padding-right: 10px;
+        padding-left: 5px;
+        font-size: 18px;
+        width: 40%;
+    }
+    .button {
+        margin-top: 25px;
+    }
 }
 @media screen and (max-width: 767px){
     .container {
@@ -49,6 +72,11 @@
     #hero .hero_description {
         padding-top: 10px;
         width: 80%;
+    }
+    /* .hero_description1, */
+    .hero_description2
+     {
+        color: rgb(172, 165, 165);
     }
     #about {
         flex-wrap: wrap;
@@ -79,6 +107,31 @@
     #footer .container {
         width: auto;
         justify-content: center;
+    }
+    .modal {
+        width: 90%;
+        height: 90%;
+        left: 5%;
+    }
+    .modal_title {
+        font-size: 25px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    .modal_img{
+        width: 300px;
+        margin: 3px;
+    }
+    .modal_description{
+        margin-top: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 18px;
+        width: 70%;
+    }
+    .button {
+        margin-top: 15px;
+        height: 25px;
     }
     
 }
@@ -144,6 +197,34 @@
     }
     #footer .input_container {
         font-size: 14px;
+    }
+    .modal {
+        width: 90%;
+        height: 90%;
+        left: 5%;
+    }
+    .modal_title {
+        font-size: 20px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    .modal_img{
+        width: 200px;
+        margin: 3px;
+    }
+    .modal_description{
+        margin-top: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 18px;
+        width: 100%;
+    }
+    .button {
+        margin-top: 15px;
+        height: 25px;
+    }
+    #modal_goButton{
+        margin: auto 20px;
     }
 }
 @media screen and (max-width: 320px){

@@ -10,6 +10,7 @@ const header = document.getElementById('header')
 const menuList = document.getElementById('menu_list')
 const menuContainer = document.getElementById('menu_container')
 const elementos_lista = document.querySelectorAll('.menu_elemento')
+const x = document.getElementById('x')
 
 //Mensajes que van dentro del modal
 const PROYECTOS_TITULO = [
@@ -86,10 +87,15 @@ goButton.onclick = () => {
     win.focus();
 }
 
-//Boton para cerrar modal
-closeButton.onclick = () => {
+//Cerrar Modal
+
+function cerrarModal () {
     modal.classList.remove('displayBlock')
     overlay.classList.remove('displayBlock')
+}
+//Boton para cerrar modal
+closeButton.onclick = () => {
+    cerrarModal()
 }
 
 
@@ -130,5 +136,7 @@ function cambioTamaño() {
         cerrarMenu()
     }
 }
+
+x.addEventListener('click', cerrarModal)
 
 
