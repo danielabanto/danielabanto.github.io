@@ -35,7 +35,7 @@ const PROYECTOS_IMAGEN = [
     'img/FB_IMG_1593315626780.jpg'
 ]
 const PROYECTOS_LINK = [
-    'https://danielabanto.github.io/simondice/',
+    'https://danielabanto.github.io/simondice/index.html',
     'https://danielabanto.github.io/platzi-bootstrap2019/',
     'https://danielabanto.github.io/RickAndMorty/dist/',
     'https://danielabanto.github.io/clon_google/',
