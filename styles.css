@@ -15,7 +15,7 @@ body {
     margin: 0;
     padding: 0;
     /* margin: 0 auto; */
-    width: 100vw;
+    overflow-x: hidden;
 }
 .container {
     max-width: 80%;
@@ -120,9 +120,10 @@ main {
 .hero_description2 {
     display: block;
     padding-top: 30px;
-    font-family: var(--josefin);
-    font-size: 34px;
+    font-family: var(--monserrat);
+    font-size: 30px;
     font-weight: bold;
+    line-height: 1.3em;
 }
 
 #about {
@@ -177,6 +178,7 @@ main {
 }
 #projects{
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 .projects_container {
     display: grid;
@@ -263,7 +265,8 @@ main {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 20px;
+    /* padding-bottom: 10px; */
+    /* margin-bottom: 20px; */
 }
 #footer div p {
     color: white;
@@ -291,7 +294,7 @@ main {
     border: none;
     outline: none;
     padding-left: 25px;
-    background-image: url('img/envelope.svg');
+    background-image: url('img/whatssapp.jpg');
     background-repeat: no-repeat;
     background-position: 3px;
     background-size: 15px;
@@ -312,6 +315,11 @@ main {
     background-color: none;
     font-weight: 400;
 }
+.email_link:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
 .links_container {
     display: flex;
     justify-content: center;
@@ -325,7 +333,7 @@ main {
 
 .overlay {
     display: none;
-    background-color: rgba(56, 133, 196, 0.4);
+    background-color: rgba(2, 2, 2, 0.4);
     position: fixed;
     top:0;
     left:0;
@@ -335,7 +343,7 @@ main {
 }
 .modal {
     display: none;
-    background-color: rgb(215, 219, 172);
+    background-color: rgb(87, 111, 112);
     position: fixed;
     z-index: 201;
     top: 5vh;
@@ -344,7 +352,7 @@ main {
     width: 60%;
     height: 500px;
     text-align: center;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: 2px 1px 20px 0px rgba(0,0,0,0.75);
     overflow: auto;
 }
@@ -357,9 +365,11 @@ main {
     background-color: rgba(255,255,255,0.15);
     font-size: 24px;
     font-weight: bold;
+    color: white;
 }
 #x:hover {
     cursor: pointer;
+    font-size: 28px;
 }
 .displayNone {
     display: none;
@@ -373,6 +383,8 @@ main {
     font-family: var(--ruso);
     margin-bottom: 25px;
     margin-top: 50px;
+    color: rgb(252, 205, 205);
+    
 }
 .modal_content {
     display: flex;
@@ -392,11 +404,12 @@ main {
     padding-left: 10px;
     font-size: 20px;
     width: 40%;
+    color: rgb(230, 224, 251);
 }
 .button {
     margin-top: 40px;
     height: 35px;
-    width: 140px;
+    width: 150px;
     border-radius: 5px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -405,11 +418,12 @@ main {
     cursor: pointer;
 }
 #modal_goButton{
-    background-color: rgba(108, 250, 79, 0.2);
+    background-color: rgb(51, 54, 51);
     margin-right: 50px;
+    color: white;
 }
 #modal_closeButton{
-    background-color: rgb(236, 30, 30);
+    background-color: rgb(51, 54, 51);
     color: white;
 }
 

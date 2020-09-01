@@ -11,6 +11,8 @@ const menuList = document.getElementById('menu_list')
 const menuContainer = document.getElementById('menu_container')
 const elementos_lista = document.querySelectorAll('.menu_elemento')
 const x = document.getElementById('x')
+const mensaje_whatsapp = document.getElementById('mensaje_whatsapp')
+const boton_whatsapp = document. getElementById('boton_whatsapp')
 
 //Mensajes que van dentro del modal
 const PROYECTOS_TITULO = [
@@ -138,5 +140,12 @@ function cambioTamaño() {
 }
 
 x.addEventListener('click', cerrarModal)
+
+//Mensaje de Whatsapp
+boton_whatsapp.addEventListener('click', enviarMensaje)
+function enviarMensaje () {
+    const win = window.open(`https://wa.me/51942301576?text=${mensaje_whatsapp.value}`, '_blank');
+    win.focus();
+}
 
 
