@@ -333,7 +333,7 @@ main {
 
 .overlay {
     display: none;
-    background-color: rgba(2, 2, 2, 0.4);
+    background-color: rgba(3, 3, 3, 0.5);
     position: fixed;
     top:0;
     left:0;
@@ -434,7 +434,7 @@ main {
     width: 100vw;
     height: 100vh;
     z-index: 199;
-    background-color: rgba(96, 168, 161, 0.6);
+    background-color: rgba(96, 168, 161, 0.8);
 }
 .ul-fullscrean {
     flex-direction: column;
@@ -446,7 +446,7 @@ main {
     justify-content: center;
 }
 .menu-elemento_variante {
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 28px;
+    font-weight: bolder;
     padding: 10px;
 }

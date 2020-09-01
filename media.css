@@ -233,4 +233,7 @@
     .input_container{
         flex-wrap: wrap;
     }
+    .email_link {
+        margin-top: 5px;
+    }
 }
