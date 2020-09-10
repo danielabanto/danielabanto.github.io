@@ -139,6 +139,11 @@ main {
     font-size: 20px;
     padding: 10px 20px 10px 0px;
 }
+.about_description a i{
+    display: block;
+    text-align: center;
+    color: blue;
+}
 .tecnology{
     position: relative;
 }

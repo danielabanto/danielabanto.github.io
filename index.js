@@ -97,6 +97,7 @@ codeButton.onclick = () => {
     const win = window.open(PROYECTOS_CODE[item], '_blank')
     win.focus()
 }
+
 //Cerrar Modal
 
 function cerrarModal () {
