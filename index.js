@@ -16,9 +16,16 @@ const boton_whatsapp = document. getElementById('boton_whatsapp')
 
 //Mensajes que van dentro del modal
 const PROYECTOS_TITULO = [
-    'SIMON DICE', 'PLATZI CONF', 'RICK AND MORTY', 'CLON GLOOGLE', 'PROYECTO 5', 'PROYECTO 6'
+    'PREMIUM ESCUELA',
+    'SIMON DICE', 
+    'PLATZI CONF', 
+    'RICK AND MORTY', 
+    'CLON GLOOGLE', 
+    'PROYECTO 5', 
+    'PROYECTO 6'
 ]
 const PROYECTOS_DESCRIPCION = [
+    '...EN PROCESO... <br>Pagina informativa de la escuela de manejo Premium, desarrollada con React.js y Bootstrap Carousel',
     'Es un juego de memoria recordando la secuencia de 4 colores, realizado con Javascript Vanilla',
     'Pagina informativa de ejemplo, maquetada con HTML, CSS y Bootstrap',
     'Todos los personajes de la serie animada, implementada con React haciendo llamado a la API de rickandmorty',
@@ -27,6 +34,7 @@ const PROYECTOS_DESCRIPCION = [
     'Proyecto 6 aun tambien por verse'
 ]
 const PROYECTOS_IMAGEN = [
+    'img/Premium.jpg',
     'img/Simon_dice.jpg',
     'img/platzi_conf.png',
     'img/rickandmorty.jpg',
@@ -35,6 +43,7 @@ const PROYECTOS_IMAGEN = [
     'img/FB_IMG_1593315626780.jpg'
 ]
 const PROYECTOS_LINK = [
+    'https://danielabanto.github.io/premium_escuela/dist/',
     'https://danielabanto.github.io/simondice/',
     'https://danielabanto.github.io/platzi-bootstrap2019/',
     'https://danielabanto.github.io/RickAndMorty/dist/',
