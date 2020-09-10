@@ -1,5 +1,6 @@
 const goButton = document.getElementById('modal_goButton')
 const closeButton = document.getElementById('modal_closeButton')
+const codeButton = document.getElementById('modal_codeButton')
 const modal = document.getElementById('modal')
 const overlay = document.getElementById('overlay')
 const proyectos = document.querySelectorAll('.comodin_overlay')
@@ -19,37 +20,31 @@ const PROYECTOS_TITULO = [
     'PREMIUM ESCUELA',
     'SIMON DICE', 
     'PLATZI CONF', 
-    'RICK AND MORTY', 
-    'CLON GLOOGLE', 
-    'PROYECTO 5', 
-    'PROYECTO 6'
+    'RICK AND MORTY'
 ]
 const PROYECTOS_DESCRIPCION = [
     '...EN PROCESO... <br>Pagina informativa de la escuela de manejo Premium, desarrollada con React.js y Bootstrap Carousel',
     'Es un juego de memoria recordando la secuencia de 4 colores, realizado con Javascript Vanilla',
     'Pagina informativa de ejemplo, maquetada con HTML, CSS y Bootstrap',
-    'Todos los personajes de la serie animada, implementada con React haciendo llamado a la API de rickandmorty',
-    'Clon simple de la pagina de inicio google con HTML y CSS',
-    'Proyectos 5 aun por verse',
-    'Proyecto 6 aun tambien por verse'
+    'Todos los personajes de la serie animada, implementada con React haciendo llamado a la API de rickandmorty'
 ]
 const PROYECTOS_IMAGEN = [
     'img/Premium.jpg',
     'img/Simon_dice.jpg',
     'img/platzi_conf.png',
-    'img/rickandmorty.jpg',
-    'img/clon_google.jpg',
-    'img/FB_IMG_1593315626780.jpg',
-    'img/FB_IMG_1593315626780.jpg'
+    'img/rickandmorty.jpg'
+]
+const PROYECTOS_CODE = [
+    'https://github.com/danielabanto/premium_escuela',
+    'https://github.com/danielabanto/simondice',
+    'https://github.com/danielabanto/platzi-bootstrap2019',
+    'https://github.com/danielabanto/RickAndMorty'
 ]
 const PROYECTOS_LINK = [
     'https://danielabanto.github.io/premium_escuela/dist/',
     'https://danielabanto.github.io/simondice/',
     'https://danielabanto.github.io/platzi-bootstrap2019/',
     'https://danielabanto.github.io/RickAndMorty/dist/',
-    'https://danielabanto.github.io/clon_google/',
-    '',
-    ''
 ]
 
 const renderizado = (id) => (
@@ -97,7 +92,11 @@ goButton.onclick = () => {
     const win = window.open(PROYECTOS_LINK[item], '_blank');
     win.focus();
 }
-
+//Boton que lleva al repositorio del codigo
+codeButton.onclick = () => {
+    const win = window.open(PROYECTOS_CODE[item], '_blank')
+    win.focus()
+}
 //Cerrar Modal
 
 function cerrarModal () {

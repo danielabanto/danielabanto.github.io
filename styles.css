@@ -416,18 +416,11 @@ main {
     border-radius: 5px;
     font-weight: bold;
     margin-bottom: 50px;
+    background-color: rgb(51, 54, 51);
+    color: white;
 }
 .button:hover {
     cursor: pointer;
-}
-#modal_goButton{
-    background-color: rgb(51, 54, 51);
-    margin-right: 50px;
-    color: white;
-}
-#modal_closeButton{
-    background-color: rgb(51, 54, 51);
-    color: white;
 }
 
 /* Clases para el hamburger menu */
