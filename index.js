@@ -26,7 +26,7 @@ const PROYECTOS_DESCRIPCION = [
     '...EN PROCESO... <br>Pagina informativa de la escuela de manejo Premium, desarrollada con React.js y Bootstrap Carousel',
     'Es un juego de memoria recordando la secuencia de 4 colores, realizado con Javascript Vanilla',
     'Pagina informativa de ejemplo, maquetada con HTML, CSS y Bootstrap',
-    'Todos los personajes de la serie animada, implementada con React haciendo llamado a la API de rickandmorty'
+    '...EN PROCESO... <br>Todos los personajes de la serie animada, implementada con React haciendo llamado a la API de rickandmorty'
 ]
 const PROYECTOS_IMAGEN = [
     'img/Premium.jpg',
