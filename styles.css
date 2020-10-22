@@ -176,10 +176,10 @@ main {
     width: 60%;
 }
 .react {
-    width: 60%;
+    width: 65%;
 }
 .redux {
-    width: 40%;
+    width: 50%;
 }
 #projects{
     margin-top: 100px;
@@ -203,23 +203,12 @@ main {
 #project4 {
     background-image: url('img/rickandmorty.jpg');
 }
-/* #project5 {
-    background-image: url('img/clon_google.jpg');
-}
-#project6 {
-    background-image: url('img/FB_IMG_1593315626780.jpg');
-}
-#project7 {
-    background-image: url('img/FB_IMG_1593315626780.jpg');
-} */
 .project {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .project {
-    /* display: none; */
-    /* opacity: .8; */
     position: relative;
     color: rgba(150, 150, 150, 0);
     background-position: center;
@@ -248,7 +237,7 @@ main {
     /* display: flex; */
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.8);
-    border: 10px solid rgb(143, 143, 143);
+    border: 3px solid rgb(143, 143, 143);
     
 }
 .comodin_overlay {
