@@ -152,7 +152,7 @@ main {
 }
 .hero_description2 {
     display: block;
-    max-width: 5000px;
+    max-width: 600px;
     padding-top: 30px;
     padding-left: 10px;
     font-family: var(--monserrat);
