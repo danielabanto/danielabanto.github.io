@@ -20,31 +20,41 @@ const PROYECTOS_TITULO = [
     'PREMIUM ESCUELA',
     'SIMON DICE', 
     'PLATZI CONF', 
-    'RICK AND MORTY'
+    'RICK AND MORTY',
+    'EVALUACIÓN OSP',
+    'FOXBEL MUSIC'
 ]
 const PROYECTOS_DESCRIPCION = [
     '...EN PROCESO... <br>Pagina informativa de la escuela de manejo Premium, desarrollada con React.js y Bootstrap Carousel',
     'Es un juego de memoria recordando la secuencia de 4 colores, realizado con Javascript Vanilla',
     'Pagina informativa de ejemplo, maquetada con HTML, CSS y Bootstrap',
-    'Todos los personajes de la serie animada, implementada con React (Hooks) haciendo llamado a la API de rickandmorty y almacenando informacion mediante el uso de Redux'
+    'Todos los personajes de la serie animada, implementada con React (Hooks) haciendo llamado a la API de rickandmorty y almacenando informacion mediante el uso de Redux',
+    'En proceso... CRUD de Peliculas con React.js',
+    'En proceso... Conexion a Deezer API y manejo del estado con React Hooks para desplegar aplicacion con reproductor de musica'
 ]
 const PROYECTOS_IMAGEN = [
     'img/Premium.jpg',
     'img/Simon_dice.jpg',
     'img/platzi_conf.png',
-    'img/rickandmorty.jpg'
+    'img/rickandmorty.jpg',
+    'img/EvaluacionOsp.png',
+    'img/FoxbelMusic.jpg'
 ]
 const PROYECTOS_CODE = [
     'https://github.com/danielabanto/premium_escuela',
     'https://github.com/danielabanto/simondice',
     'https://github.com/danielabanto/platzi-bootstrap2019',
-    'https://github.com/danielabanto/RickAndMorty'
+    'https://github.com/danielabanto/RickAndMorty',
+    'https://github.com/danielabanto/evaluacion_osp',
+    'https://github.com/danielabanto/foxbelMusic'
 ]
 const PROYECTOS_LINK = [
     'https://danielabanto.github.io/premium_escuela/dist/',
     'https://danielabanto.github.io/simondice/',
     'https://danielabanto.github.io/platzi-bootstrap2019/',
     'https://danielabanto.github.io/RickAndMorty/dist/',
+    'https://danielabanto.github.io/evaluacion_osp/#/peliculas',
+    'https://danielabanto.github.io/foxbelMusic/'
 ]
 
 const renderizado = (id) => (

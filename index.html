@@ -34,10 +34,11 @@
 				<p>
 					<span class="hero_description1">
 						Hola! soy Daniel Abanto <br>
-					Frontend Developer <br>
+					<span class="hero_subtitle">Frontend Developer</span> <br>
 					</span>
 					<span class="hero_description2">
-						PROFESIONAL CON CAPACIDAD ANALÍTICA, VISIÓN EN LA MEJORA CONTINUA Y EN BUSQUEDA DE NUEVOS RETOS
+						<!-- PROFESIONAL CON CAPACIDAD ANALÍTICA, VISIÓN EN LA MEJORA CONTINUA Y EN BUSQUEDA DE NUEVOS RETOS -->
+						Profesional en mis proyectos, apasionado por la tecnología y en la busqueda de nuevos retos
 						<!-- APASIONADO POR LA TECNOLOGIA, EN CONSTANTE CRECIMIENTO Y EN BUSQUEDA DE NUEVOS RETOS -->
 						<!-- Apasionado por la tecnologia, en constante crecimiento y en busqueda de nuevos retos. -->
 					</span>
@@ -46,49 +47,75 @@
 		</section>
 		<div class="container">
 			<section id="about">
-				<div class="about_description">
-					<p>
-						Utilizo HTML<sub>5</sub> y CSS<sub>3</sub> para la maquetacion
-						y, en la interactividad, uso tanto JS vanilla asi como
-						la libreria de React junto con Redux.
-						<br/><br/>
-						Actualmente me encuentro mejorando mis habilidades
-						de React e incorporando tecnologias relacionadas al Desarrollo Web.
-					</p>
-					<a 
-						href="https://onedrive.live.com/embed?cid=784EA34DAACF9F47&resid=784EA34DAACF9F47%217973&authkey=AAmUvLKthyl5ez4&em=2"
-						download="CV-Daniel Abanto"
-						target="_blank"
-					>
-						<i>Ver C.V. en PDF</i>
-					</a>
-				</div>
-				<div class="about_tecnologies">
-					<div class="tecnology">
-						<p class="tecnology_description"><span>Html5</span><span>100%</span></p>
-						<div class="tecnology_percent"><div class="percent html"></div></div>
+				<h2 style="width:100%">ACERCA DE MI</h2>
+				<div class="about_container">
+					<div class="about_description">
+						<p>
+							Como Frontend utilizo HTML<sub>5</sub> y CSS<sub>3</sub> para la maquetacion y, en la interactividad, uso tanto JS vanilla asi como
+							la libreria de React con componentes funcionales y Hooks, y para manejo de estado tanto Conext como Redux.
+							Utilizo webpack y babel para la configuración del entorno de desarrollo.<br>
+							Además, como alternativa paralela, también utilizo Wordpress con Elementor como maquetador visual.
+							<br/><br/>
+							Actualmente me encuentro mejorando mis habilidades
+							de React e incorporando tecnologias relacionadas al Desarrollo Web.
+						</p>
+						<a 
+							href="https://onedrive.live.com/embed?cid=784EA34DAACF9F47&resid=784EA34DAACF9F47%217999&authkey=ANTjbuj5rc4xS3s&em=2"
+							download="CV-Daniel Abanto"
+							target="_blank"
+						>
+							<i>Ver C.V. en PDF</i>
+						</a>
 					</div>
-					<div class="tecnology">
-						<p class="tecnology_description"><span>Css3</span><span>80%</span></p>
-						<div class="tecnology_percent"><div class="percent css"></div></div>
-					</div>
-					<div class="tecnology">
-						<p class="tecnology_description"><span>Javascript</span><span>60%</span></p>
-						<div class="tecnology_percent"><div class="percent js"></div></div>
-					</div>
-					<div class="tecnology">
-						<p class="tecnology_description"><span>React</span><span>65%</span></p>
-						<div class="tecnology_percent"><div class="percent react"></div></div>
-					</div>
-					<div class="tecnology">
-						<p class="tecnology_description"><span>Redux</span><span>50%</span></p>
-						<div class="tecnology_percent"><div class="percent redux"></div></div>
+					<div class="about_tecnologies">
+						<div class="tecnology">
+							<p class="tecnology_description"><span>Html5</span><span>100%</span></p>
+							<div class="tecnology_percent"><div class="percent html"></div></div>
+						</div>
+						<div class="tecnology">
+							<p class="tecnology_description"><span>Css3</span><span>80%</span></p>
+							<div class="tecnology_percent"><div class="percent css"></div></div>
+						</div>
+						<div class="tecnology">
+							<p class="tecnology_description"><span>Javascript</span><span>60%</span></p>
+							<div class="tecnology_percent"><div class="percent js"></div></div>
+						</div>
+						<div class="tecnology">
+							<p class="tecnology_description"><span>Wordpress</span><span>50%</span></p>
+							<div class="tecnology_percent"><div class="percent wordpress"></div></div>
+						</div>
+						<div class="tecnology">
+							<p class="tecnology_description"><span>Elementor</span><span>80%</span></p>
+							<div class="tecnology_percent"><div class="percent elementor"></div></div>
+						</div>
+						<div class="tecnology">
+							<p class="tecnology_description"><span>React</span><span>65%</span></p>
+							<div class="tecnology_percent"><div class="percent react"></div></div>
+						</div>
+						<div class="tecnology">
+							<p class="tecnology_description"><span>Redux</span><span>50%</span></p>
+							<div class="tecnology_percent"><div class="percent redux"></div></div>
+						</div>
 					</div>
 				</div>
 			</section>
 			<section id="projects">
 				<h2>PROYECTOS RECIENTES</h2>
 				<div class="projects_container">
+					<a id="project6" class="project">
+						<div class="project_details">
+							<h3>Foxbel Music</h3>
+							<p>Aplicación de musica con conexion a API deezer.com</p>
+						</div>
+						<div class="comodin_overlay"></div>
+					</a>
+					<a id="project5" class="project">
+						<div class="project_details">
+							<h3>Evaluación Osp</h3>
+							<p>CRUD de Peliculas con React</p>
+						</div>
+						<div class="comodin_overlay"></div>
+					</a>
 					<a id="project4" class="project">
 						<div class="project_details">
 							<h3>RICK AND MORTY</h3>
@@ -100,20 +127,6 @@
 						<div class="project_details">
 							<h3>PREMIUM ESCUELA</h3>
 							<p>...EN PROCESO...<br/>Pagina Informativa de Premium Escuela de conductores</p>
-						</div>
-						<div class="comodin_overlay"></div>
-					</a>
-					<a id="project2" class="project">
-						<div class="project_details">
-							<h3>SIMON DICE</h3>
-							<p>Juego de memoria con secuencias de colores</p>
-						</div>
-						<div class="comodin_overlay"></div>
-					</a>
-					<a id="project3" class="project">
-						<div class="project_details">
-							<h3>PLATZI CONF</h3>
-							<p>Pagina informativa de ejemplo de la Conferencia de Platzi</p>
 						</div>
 						<div class="comodin_overlay"></div>
 					</a>
